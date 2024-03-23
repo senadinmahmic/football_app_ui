@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:football_app_ui/modules/home/widgets/home_app_bar.dart';
+import 'package:football_app_ui/modules/home/widgets/matches_list.dart';
 import 'package:football_app_ui/modules/home/widgets/rising_stars_list.dart';
 import 'package:get/get.dart';
 
@@ -18,8 +19,17 @@ class HomeView extends GetView<HomeController> {
           Column(
             children: [
               HomeAppBar(),
-              HotTopicsList(),
-              RisingStarsList(),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      HotTopicsList(),
+                      RisingStarsList(),
+                      MatchesList(),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ],
