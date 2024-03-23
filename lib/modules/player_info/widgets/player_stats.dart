@@ -16,8 +16,8 @@ class PlayerStats extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-            left: 30,
-            right: 30,
+            left: 20,
+            right: 20,
             top: 25,
             bottom: 10,
           ),

@@ -14,8 +14,8 @@ class PlayerInfo extends GetView<PlayerInfoController> {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-            left: 30,
-            right: 30,
+            left: 20,
+            right: 20,
             top: 10,
             bottom: 10,
           ),
@@ -33,7 +33,7 @@ class PlayerInfo extends GetView<PlayerInfoController> {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 30,
+            horizontal: 20,
           ),
           child: Text(
             getPlayerDescription(

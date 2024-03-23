@@ -12,12 +12,12 @@ dependencies:
     sdk: flutter
   cupertino_icons: 1.0.2
   get: 4.6.6
+  flutter_launcher_icons: 0.13.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
 
 flutter:
   uses-material-design: true
@@ -27,6 +27,11 @@ flutter:
     - assets/images/player_images/
     - assets/images/clubs/
     - assets/images/stats_images/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
 
   
   

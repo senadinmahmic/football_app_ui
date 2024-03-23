@@ -4,6 +4,8 @@ import 'package:football_app_ui/modules/home/bindings/home_bindings.dart';
 import 'package:football_app_ui/modules/home/views/home_view.dart';
 import 'package:football_app_ui/modules/player_info/bindings/player_info_bindings.dart';
 import 'package:football_app_ui/modules/player_info/views/player_info_view.dart';
+import 'package:football_app_ui/modules/splash/bindings/splash_bindings.dart';
+import 'package:football_app_ui/modules/splash/views/splash_view.dart';
 
 class AppPages {
   AppPages._();
@@ -18,6 +20,11 @@ class AppPages {
       name: '/playerinfo',
       page: () => const PlayerInfoView(),
       binding: PlayerInfoBindings(),
+    ),
+    GetPage(
+      name: '/splash',
+      page: () => const SplashView(),
+      binding: SplashBindings(),
     ),
   ];
 }
