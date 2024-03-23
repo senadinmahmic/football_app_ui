@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:football_app_ui/config/app_colors.dart';
-import 'package:football_app_ui/modules/home/bindings/home_bindings.dart';
 import 'package:football_app_ui/modules/splash/bindings/splash_bindings.dart';
 import 'package:football_app_ui/routes/app_pages.dart';
 import 'package:football_app_ui/routes/app_routes.dart';

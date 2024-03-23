@@ -140,7 +140,7 @@ class MatchesList extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 5),
                                   Text(
-                                    '${Random().nextInt(30)} June, 2024',
+                                    '${Random().nextInt(30) + 1} June, 2024',
                                     style: TextStyle(
                                       color: Colors.grey[400],
                                       fontSize: 12,
