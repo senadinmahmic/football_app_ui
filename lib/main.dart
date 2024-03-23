@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.background1,
         appBarTheme: const AppBarTheme(
-          backgroundColor: AppColors.background1,
+          backgroundColor: Colors.transparent,
         ),
       ),
       title: 'Football App UI',
