@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_app_ui/modules/player_info/widgets/player_info_app_bar.dart';
 import 'package:football_app_ui/modules/player_info/widgets/player_info_card.dart';
+import 'package:football_app_ui/modules/player_info/widgets/player_stats.dart';
 import 'package:football_app_ui/widgets/backgroundimage.dart';
 import 'package:get/get.dart';
 
@@ -19,6 +20,7 @@ class PlayerInfoView extends GetView<PlayerInfoController> {
           children: [
             PlayerInfoAppBar(),
             PlayerInfoCard(),
+            PlayerStats(),
           ],
         ),
       ],

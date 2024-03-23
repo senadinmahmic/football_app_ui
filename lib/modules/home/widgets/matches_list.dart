@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:football_app_ui/config/app_colors.dart';
+import 'package:football_app_ui/data/dummy_data.dart';
 
 class MatchesList extends StatelessWidget {
   const MatchesList({super.key});
@@ -86,12 +87,13 @@ class MatchesList extends StatelessWidget {
                                       'assets/images/clubs/club${index + 1}.png'),
                                 ),
                                 const SizedBox(height: 5),
-                                const Text(
-                                  'TEAM 1',
-                                  style: TextStyle(
+                                Text(
+                                  clubNames[index],
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),
+                                  textAlign: TextAlign.center,
                                 ),
                               ],
                             ),
@@ -110,9 +112,9 @@ class MatchesList extends StatelessWidget {
                                   const SizedBox(height: 10),
                                   Row(
                                     children: [
-                                      const Text(
-                                        '2',
-                                        style: TextStyle(
+                                      Text(
+                                        '${Random().nextInt(5)}',
+                                        style: const TextStyle(
                                           color: Colors.white,
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
@@ -138,7 +140,7 @@ class MatchesList extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 5),
                                   Text(
-                                    '27 June, 2024',
+                                    '${Random().nextInt(30)} June, 2024',
                                     style: TextStyle(
                                       color: Colors.grey[400],
                                       fontSize: 12,
@@ -156,12 +158,13 @@ class MatchesList extends StatelessWidget {
                                       'assets/images/clubs/club${index + 4}.png'),
                                 ),
                                 const SizedBox(height: 5),
-                                const Text(
-                                  'TEAM 1',
-                                  style: TextStyle(
+                                Text(
+                                  clubNames[index + 3],
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),
+                                  textAlign: TextAlign.center,
                                 ),
                               ],
                             ),

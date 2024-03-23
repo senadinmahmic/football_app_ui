@@ -56,3 +56,12 @@ List<PlayerModel> playersList = [
     image: 'assets/images/player_images/player5.png',
   ),
 ];
+
+List clubNames = [
+  'Machester\nUnited',
+  'Chelsea',
+  'Arsenal',
+  'Juventus',
+  'Manchester\nCity',
+  'Barcelona',
+];
