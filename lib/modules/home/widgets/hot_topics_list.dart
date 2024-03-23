@@ -78,7 +78,14 @@ class HotTopicsList extends GetView<HomeController> {
                             width: double.infinity,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Colors.black.withOpacity(0.3),
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.transparent,
+                                  Colors.black.withOpacity(0.6),
+                                ],
+                              ),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
