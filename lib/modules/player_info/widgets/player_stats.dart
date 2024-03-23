@@ -156,7 +156,7 @@ class PlayerStats extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8),
                         child: Text(
-                          'Games',
+                          'Goals',
                           style: TextStyle(
                             color: Colors.grey[500],
                           ),
@@ -200,7 +200,7 @@ class PlayerStats extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8),
                         child: Text(
-                          'Games',
+                          'Assists',
                           style: TextStyle(
                             color: Colors.grey[500],
                           ),
