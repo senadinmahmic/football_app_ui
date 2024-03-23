@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:football_app_ui/modules/player_info/widgets/player_info_app_bar.dart';
+import 'package:football_app_ui/modules/player_info/widgets/player_info_card.dart';
+import 'package:football_app_ui/widgets/backgroundimage.dart';
 import 'package:get/get.dart';
 
 import 'package:football_app_ui/modules/player_info/controllers/player_info_controller.dart';
@@ -8,24 +11,17 @@ class PlayerInfoView extends GetView<PlayerInfoController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Player Info'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('Player Info'),
-            ElevatedButton(
-              onPressed: () {
-                Get.back();
-              },
-              child: const Text('Back'),
-            ),
+    return const Scaffold(
+        body: Stack(
+      children: [
+        BackgroundImage(),
+        Column(
+          children: [
+            PlayerInfoAppBar(),
+            PlayerInfoCard(),
           ],
         ),
-      ),
-    );
+      ],
+    ));
   }
 }

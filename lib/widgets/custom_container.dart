@@ -4,7 +4,16 @@ import 'package:football_app_ui/data/dummy_data.dart';
 
 class CustomContainer extends StatelessWidget {
   final int index;
-  const CustomContainer({required this.index, super.key});
+  final double leftPdding;
+  final double height; //151
+  final double width; //126
+  const CustomContainer({
+    required this.height,
+    required this.width,
+    required this.leftPdding,
+    required this.index,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,23 +24,24 @@ class CustomContainer extends StatelessWidget {
           child: ClipPath(
             clipper: MyCustomClipper(),
             child: Container(
-              height: 151,
-              width: 126,
+              height: height,
+              width: width,
               color: AppColors.primary1,
             ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(
+          padding: EdgeInsets.only(
             top: 3,
+            left: leftPdding,
           ),
           child: Align(
             alignment: Alignment.topCenter,
             child: ClipPath(
               clipper: MyCustomClipper(),
               child: SizedBox(
-                height: 145,
-                width: 120,
+                height: height - 6,
+                width: width - 6,
                 child: ClipPath(
                   clipper: MyCustomClipper(),
                   child: Image.asset(
